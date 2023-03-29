@@ -1,3 +1,4 @@
+基本的VQE：
 Molecule:  H1-F1_sto3g_singlet
 Number of parameters: 20
 Optimization completed at step  56
@@ -23,7 +24,7 @@ Optimized energy: -15.5944995880126953
 Runtime:  152234.78115799325 s
 
 
-
+Sym优化的VQE：
 Molecule:  H1-F1_sto3g_singlet
 Number of parameters: 11
 Optimization completed at step  10
