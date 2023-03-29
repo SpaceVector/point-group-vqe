@@ -21,3 +21,17 @@ Number of parameters: 90
 Optimization completed at step  49
 Optimized energy: -15.5944995880126953
 Runtime:  152234.78115799325 s
+
+
+
+Molecule:  H1-F1_sto3g_singlet
+Number of parameters: 11
+Optimization completed at step  10
+Optimized energy: -98.6017913818359375
+Runtime:  1.5151927918195724 s
+
+Molecule:  H1-Li1_sto3g_singlet
+Number of parameters: 20
+Optimization completed at step  39
+Optimized energy:  -7.8825168609619141
+Runtime:  6.946018000133336 s
