@@ -14,13 +14,12 @@ from SymUCCSD import uccsd_singlet_generator
 
 ms.set_context(mode=ms.PYNATIVE_MODE, device_target="CPU")
 geometry = [
-    # ["Be", [0.0, 0.0, 0.0]],
-    # ["H", [0.0, 0.0, 1.291]],
-    # ["H", [0.0, 0.0, -1.291]]
-    # ["Li",[0.0, 0.0, 0.378]],
-    # ["H", [0.0, 0.0, -1.133]]
-    ["F",[0.0, 0.0, 0.096]],
-    ["H", [0.0, 0.0, -0.860]]
+    ["C", [0.0, 0.0, 0.653]],
+    ["C", [0.0, 0.0, -0.653]],
+    ["H", [0.0, 0.916, 1.229]],
+    ["H", [0.0, -0.916, 1.229]],
+    ["H", [0.0, -0.916, -1.229]],
+    ["H", [0.0, 0.916, -1.229]]
 ]
 basis = "sto3g"
 spin = 0
@@ -33,12 +32,13 @@ molecule_of = MolecularData(
 molecule_of = run_pyscf(
     molecule_of
 )
+
 mol = gto.Mole()
 mol.atom = molecule_of.geometry
 mol.basis = molecule_of.basis
 mol.spin = molecule_of.multiplicity - 1
 mol.charge = molecule_of.charge
-mol.symmetry = "C2v"
+mol.symmetry = "D2h"
 mol.build()
 mf = scf.RHF(mol)
 mf.kernel()
