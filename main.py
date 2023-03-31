@@ -12,7 +12,7 @@ from pyscf import gto, scf, symm
 from SymUCCSD import uccsd_singlet_generator
 
 
-ms.set_context(mode=ms.PYNATIVE_MODE, device_target="CPU")
+ms.set_context(mode=ms.PYNATIVE_MODE, device_target="GPU")
 geometry = [
     ["C", [0.0, 0.0, 0.653]],
     ["C", [0.0, 0.0, -0.653]],
@@ -71,7 +71,7 @@ total_circuit = hartreefock_wfn_circuit + ansatz_circuit
 total_circuit.summary()
 
 start_time = default_timer()    # 程序开始时间
-sim = Simulator('mqvector', total_circuit.n_qubits)
+sim = Simulator('mqvector_gpu', total_circuit.n_qubits)
 molecule_pqc = sim.get_expectation_with_grad(Hamiltonian(hamiltonian_QubitOp), total_circuit)
 molecule_pqcnet = MQAnsatzOnlyLayer(molecule_pqc, 'Zeros')
 initial_energy = molecule_pqcnet()
