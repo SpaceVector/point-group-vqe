@@ -36,3 +36,15 @@ Number of parameters: 20
 Optimization completed at step  39
 Optimized energy:  -7.8825168609619141
 Runtime:  6.946018000133336 s
+
+Molecule:  H2-O1_sto3g_singlet
+Number of parameters: 26
+Optimization completed at step  12
+Optimized energy: -75.0203247070312500
+Runtime:  33665.614542486146 s
+
+Molecule:  H2-Be1_sto3g_singlet
+Number of parameters: 23
+Optimization completed at step  31
+Optimized energy: -15.5944051742553711
+Runtime:  52907.308229413815 s
