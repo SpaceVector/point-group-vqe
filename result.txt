@@ -1,50 +1,169 @@
 基本的VQE：
+==========================Circuit Summary==========================
+|Total number of gates  : 5190.                                   |
+|Parameter gates        : 220.                                    |
+|with 20 parameters are :                                         |
+|p0, p5, p1, p6, p2, p7, p3, p8, p4, p9..                        .|
+|Number qubit of circuit: 12                                      |
+===================================================================
 Molecule:  H1-F1_sto3g_singlet
 Number of parameters: 20
-Optimization completed at step  56
-Optimized energy: -98.4725799560546875
-Runtime:  11.047328459098935 s
+Optimization completed at step  10
+Optimized energy: -98.6017913818359375
+Runtime by CPU:  2.2354494207538664 s
+Runtime by GPU:  4.358639398997184 s
 
+============================Circuit Summary============================
+|Total number of gates  : 15172.                                      |
+|Parameter gates        : 640.                                        |
+|with 44 parameters are :                                             |
+|p0, p8, p1, p9, p2, p10, p3, p11, p4, p12..                        . |
+|Number qubit of circuit: 12                                          |
+=======================================================================
 Molecule:  H1-Li1_sto3g_singlet
 Number of parameters: 44
-Optimization completed at step  67
-Optimized energy:  -7.8827519416809082
-Runtime:  35.70568412402645 s
+Optimization completed at step  65
+Optimized energy:  -7.8825187683105469
+Runtime by CPU:  29.830108074937016 s
+Runtime by GPU:  25.080039207008667 s
 
+=============================Circuit Summary=============================
+|Total number of gates  : 25090.                                        |
+|Parameter gates        : 1000.                                         |
+|with 65 parameters are :                                               |
+|p0, p10, p1, p11, p2, p12, p3, p13, p4, p14..                        . |
+|Number qubit of circuit: 14                                            |
+=========================================================================
 Molecule:  H2-O1_sto3g_singlet
 Number of parameters: 65
-Optimization completed at step  30
-Optimized energy: -75.0231857299804688
-Runtime:  88748.36046821694 s
+Optimization completed at step  29
+Optimized energy: -75.0203170776367188
+Runtime by CPU:  45.17390292370692 s
+Runtime by GPU:  20.630317924005794 s
 
+=============================Circuit Summary=============================
+|Total number of gates  : 37366.                                        |
+|Parameter gates        : 1488.                                         |
+|with 90 parameters are :                                               |
+|p0, p12, p1, p13, p2, p14, p3, p15, p4, p16..                        . |
+|Number qubit of circuit: 14                                            |
+=========================================================================
 Molecule:  H2-Be1_sto3g_singlet
 Number of parameters: 90
 Optimization completed at step  49
-Optimized energy: -15.5944995880126953
-Runtime:  152234.78115799325 s
+Optimized energy: -15.5944061279296875
+Runtime by CPU:  68.93877846095711 s
+Runtime by GPU:  48.1251737089915 s
 
+=============================Circuit Summary=============================
+|Total number of gates  : 61950.                                        |
+|Parameter gates        : 2340.                                         |
+|with 135 parameters are:                                               |
+|p0, p15, p1, p16, p2, p17, p3, p18, p4, p19..                        . |
+|Number qubit of circuit: 16                                            |
+=========================================================================
+Molecule:  H3-N1_sto3g_singlet
+Number of parameters: 135
+Optimization completed at step  35
+Optimized energy: -55.5243492126464844
+Runtime by CPU:  232.5523607879877 s
+Runtime by GPU:  61.959667214003275 s
+
+=============================Circuit Summary=============================
+|Total number of gates  : 118010.                                       |
+|Parameter gates        : 4240.                                         |
+|with 230 parameters are:                                               |
+|p0, p20, p1, p21, p2, p22, p3, p23, p4, p24..                        . |
+|Number qubit of circuit: 18                                            |
+=========================================================================
+Molecule:  H4-C1_sto3g_singlet
+Number of parameters: 230
+Optimization completed at step  27
+Optimized energy: -39.8048553466796875
+Runtime by CPU:  674.6131395227276 s
+Runtime by GPU:  170.10553442299715 s
 
 Sym优化的VQE：
+===================================Circuit Summary===================================
+|Total number of gates  : 2142.                                                     |
+|Parameter gates        : 100.                                                      |
+|with 11 parameters are :                                                           |
+|s_0, d1_0, s_1, d1_1, s_2, d1_2, d1_3, d1_4, d2_0, d2_1..                        . |
+|Number qubit of circuit: 12                                                        |
+=====================================================================================
 Molecule:  H1-F1_sto3g_singlet
 Number of parameters: 11
 Optimization completed at step  10
 Optimized energy: -98.6017913818359375
-Runtime:  1.5151927918195724 s
+Runtime by CPU:  1.3096084757708013 s
+Runtime by GPU:  3.254543195987935 s
 
+===================================Circuit Summary===================================
+|Total number of gates  : 5316.                                                     |
+|Parameter gates        : 224.                                                      |
+|with 20 parameters are :                                                           |
+|s_0, d1_0, s_1, d1_1, d1_2, d1_3, d1_4, d1_5, s_6, d1_6..                        . |
+|Number qubit of circuit: 12                                                        |
+=====================================================================================
 Molecule:  H1-Li1_sto3g_singlet
 Number of parameters: 20
 Optimization completed at step  39
 Optimized energy:  -7.8825168609619141
-Runtime:  6.946018000133336 s
+Runtime by CPU:  6.749904905911535 s
+Runtime by GPU:  7.709208079002565 s
 
+===================================Circuit Summary===================================
+|Total number of gates  : 7818.                                                     |
+|Parameter gates        : 336.                                                      |
+|with 26 parameters are :                                                           |
+|s_0, d1_0, s_1, d1_1, d1_2, s_3, d1_3, d1_4, d1_5, d1_6..                        . |
+|Number qubit of circuit: 14                                                        |
+=====================================================================================
 Molecule:  H2-O1_sto3g_singlet
 Number of parameters: 26
 Optimization completed at step  12
 Optimized energy: -75.0203247070312500
-Runtime:  33665.614542486146 s
+Runtime by CPU:  8.592032148968428 s
+Runtime by GPU:  5.775155804993119 s
 
+===================================Circuit Summary===================================
+|Total number of gates  : 5890.                                                     |
+|Parameter gates        : 268.                                                      |
+|with 23 parameters are :                                                           |
+|d1_0, d1_1, d1_2, d1_3, d1_4, d1_5, s_6, d1_6, s_7, d1_7..                        .|
+|Number qubit of circuit: 14                                                        |
+=====================================================================================
 Molecule:  H2-Be1_sto3g_singlet
 Number of parameters: 23
 Optimization completed at step  31
 Optimized energy: -15.5944051742553711
-Runtime:  52907.308229413815 s
+Runtime by CPU:  10.005716532003134 s
+Runtime by GPU:  7.275199955009157 s
+
+==================================Circuit Summary==================================
+|Total number of gates  : 30934.                                                  |
+|Parameter gates        : 1196.                                                   |
+|with 75 parameters are :                                                         |
+|s_0, d1_0, s_1, d1_1, d1_2, s_3, d1_3, s_4, d1_4, s_5..                        . |
+|Number qubit of circuit: 16                                                      |
+===================================================================================
+Molecule:  H3-N1_sto3g_singlet
+Number of parameters: 75
+Optimization completed at step  32
+Optimized energy: -55.5244064331054688
+Runtime by CPU:  92.53053297195584 s
+Runtime by GPU:  29.134165089999442 s
+
+===================================Circuit Summary===================================
+|Total number of gates  : 30974.                                                    |
+|Parameter gates        : 1108.                                                     |
+|with 65 parameters are :                                                           |
+|d1_0, d1_1, s_2, d1_2, d1_3, d1_4, d1_5, d1_6, d1_7, s_8..                        .|
+|Number qubit of circuit: 18                                                        |
+=====================================================================================
+Molecule:  H4-C1_sto3g_singlet
+Number of parameters: 65
+Optimization completed at step  23
+Optimized energy: -39.7706413269042969
+Runtime by CPU:  167.94873534096405 s
+Runtime by GPU:  52.31754236698907 s
